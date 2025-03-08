@@ -2,7 +2,7 @@ print('\033[36m\033[1mПідтвердження особистості')
 print('='*25,'\033[0m\n')
 # ans='1'
 # while ans=='1':
-for kol in range(3):
+for kol in range(3)
     age=int(input('Ваш вік:'))
     print('\033[36m\033[1m')
     if age >=0 and age <14:
