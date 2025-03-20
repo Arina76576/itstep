@@ -1,3 +1,4 @@
+'''
 class Car:
     # speed=110
     # model='BMW'
@@ -27,8 +28,8 @@ print(auto.count)
 # print('Швидкість авто:',auto.speed)
 # print('Модель авто:', auto.model)
 # print('Модель авто:', auto2.model)
-
 '''
+
 class Zm:
     def __init__(self,id=111,name="Саша",height=170):
         self.id=id
@@ -49,4 +50,3 @@ p1.__str__()
 # print(str(p2))
 print(bool(p1))
 print(p2.__bool__())
-'''
