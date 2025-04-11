@@ -1,4 +1,4 @@
-'''
+
 --------Звязок між класами---------
 class Human:
     count=0
@@ -30,7 +30,6 @@ car=Auto('Богдан')
 car.add(pas1,pas2,pas3)
 car.info()
 print('Кіл пасажирів:',Human.count)
-'''
 
 
 '''
@@ -59,7 +58,7 @@ class Labourer(Human):
         self.job=job
         self.experience=experience
     def __str__(self):
-        return super().__str__()+ ' моя праця ' (self.job)+' мій стаж праці '+str(self.experience)+' років'
+        return super().__str__()+ ' моя праця ' +self.job+' мій стаж праці '+str(self.experience)+' років'
 
 woman=Human('Марина',20, 166,'вірменка','Запоріжжя',55)
 print(woman) #1
@@ -68,6 +67,7 @@ print(str(p)) #2
 L=Labourer('Михайло', 25, 180, 'українець', 'Київ', 80, 'програміст', 5)
 print(str(L))
 '''
+
 '''
 class PC:
     def __init__(self):
@@ -83,6 +83,11 @@ class Display:
 class Smart(PC,Display):
     def info(self):
         print('Смартфон моделі',self.model,"має параметри: об'м пам'яті", self.memory, 'а розширення екрану',self.resol)
+        
+tel=Smart()
+tel.info()
+'''
+
 '''
 class Device:
     def __init__(self):
@@ -98,7 +103,6 @@ class Tablet(Device,Portable):
     def info(self):
         print('Пристрій', self.name, 'важіть', self.weight, ' гр.')
 
-#tel=Smart()
-#tel.info()
 pl=Tablet()
 pl.info()
+'''
